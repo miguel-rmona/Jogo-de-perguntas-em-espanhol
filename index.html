@@ -345,6 +345,38 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Game clt
+            
+            let questions = [];
+            let currentQuestionIndex = 0;
+            let score = 0;
+            let selectedOption = null;
+            let timer;
+            let timeLeft = 30;
+            let questionType = "deportes";
+            const apiKey = "AIzaSyB1v58Y2TwY1AyCsdVhIJl-lWMgPetMMTU";
+            
+            // DOM elements
+            const mainMenu = document.getElementById('main-menu');
+            const creditsScreen = document.getElementById('credits-screen');
+            const settingsScreen = document.getElementById('settings-screen');
+            const gameScreen = document.getElementById('game-screen');
+            const questionElement = document.getElementById('question');
+            const optionsElement = document.getElementById('options');
+            const scoreElement = document.getElementById('score');
+            const timerElement = document.getElementById('timer');
+            const progressBarElement = document.getElementById('progress-bar');
+            const loadingElement = document.getElementById('loading');
+            const questionContainer = document.getElementById('question-container');
+            const resultContainer = document.getElementById('result-container');
+            const finalScoreElement = document.getElementById('final-score');
+            const totalQuestionsFinalElement = document.getElementById('total-questions-final');
+
+
+
+
+
+            document.addEventListener('DOMContentLoaded', () => {
             // Game variables
             let questions = [];
             let currentQuestionIndex = 0;
